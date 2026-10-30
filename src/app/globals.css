@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+:root{--ink:#171717;--muted:#777;--line:#e8e8e8;--paper:#fff;--soft:#f7f7f6}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#fff;color:var(--ink)}
+body{font-family:"DM Sans",Arial,sans-serif}
+main{max-width:900px;margin:0 auto;padding:48px 24px 80px}
+.topline{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#666}
+.hero{text-align:center;padding:88px 0 48px}
+.kicker{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#777}
+h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(48px,8vw,86px);line-height:1.02;letter-spacing:-.045em;font-weight:500;margin:18px 0}
+.lede{font-size:17px;line-height:1.7;color:#666;max-width:590px;margin:0 auto}
+.date{margin-top:34px;font-size:12px;letter-spacing:.17em;font-weight:700;color:#333}
+.rule{width:42px;height:1px;background:#aaa;margin:30px auto}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0 58px}
+.stat{border:1px solid var(--line);padding:22px;border-radius:4px}
+.stat strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:30px;font-weight:500}
+.stat span{font-size:12px;color:#777;letter-spacing:.08em;text-transform:uppercase}
+.panel{border:1px solid var(--line);padding:clamp(22px,5vw,42px);border-radius:5px;max-width:680px;margin:0 auto}
+h2{font-family:"Playfair Display",Georgia,serif;font-size:32px;font-weight:500;margin:0 0 8px}
+.note{color:#777;font-size:14px;line-height:1.6;margin:0 0 24px}
+label{display:block;font-size:13px;font-weight:600;margin:18px 0 8px}
+textarea,input[type=text]{width:100%;border:1px solid #ddd;border-radius:3px;background:#fff;padding:14px;font:inherit;color:#171717}
+textarea{min-height:150px;resize:vertical}textarea:focus,input:focus{outline:2px solid #aaa;outline-offset:2px}
+.check{display:flex;gap:10px;align-items:flex-start;color:#666;font-size:12px;line-height:1.5;margin:18px 0}.check input{margin-top:3px}
+.price{display:flex;justify-content:space-between;align-items:center;background:var(--soft);padding:16px;margin:24px 0}
+.price b{font-family:"Playfair Display",Georgia,serif;font-size:25px;font-weight:500}
+button{width:100%;border:1px solid #171717;background:#171717;color:white;padding:16px;font:600 13px "DM Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;border-radius:3px}
+button:hover{background:#444}button:disabled{opacity:.5;cursor:not-allowed}
+.status{font-size:13px;line-height:1.6;margin-top:16px;color:#444}
+footer{text-align:center;color:#888;font-size:11px;margin-top:52px;line-height:1.8}
+@media(max-width:600px){main{padding:24px 18px 55px}.hero{padding:65px 0 38px}.grid{gap:10px}.stat{padding:16px}.stat strong{font-size:25px}.topline{font-size:10px}}
